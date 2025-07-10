@@ -277,13 +277,20 @@ WHERE EMAIL LIKE '___$_%'ESCAPE '$';
 
 --------------------------- 실습 문제 ---------------------------------------
 -- 1. EMPLOYEE에서 이름이 '연'으로 끝나는 사원들의 사원명, 입사일 조회
-SELECT 
+SELECT EMP_NAME, HIRE_DATE
+FROM EMPLOYEE
+WHERE EMP_NAME LIKE '%연';
 
 -- 2. EMPLOYEE에서 전화번호 처음 3자리가 010이 아닌 사원들의 사원명, 전화번호 조회
-
+SELECT EMP_NAME, PHONE
+FROM EMPLOYEE
+WHERE NOT PHONE  LIKE '010%';
 
 -- 3. EMPLOYEE에서 이름에 '하'가 포함되어 있고 급여가 240만원 이상인 사원들의 사원명, 급여 조회
-
+SELECT EMP_NAME, SALARY
+FROM EMPLOYEE
+WHERE EMP_NAME LIKE '%하%' AND SALARY >= 2400000;
 
 -- 4. DEPARTMENT 에서 해외영업부인 부서들 부서코드, 부서명 조회
-
+SELECT DEPT_ID, DEPT_TITLE
+FROM DEPARTMENT;
