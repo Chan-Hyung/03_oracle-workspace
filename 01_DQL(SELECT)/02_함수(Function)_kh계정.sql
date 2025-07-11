@@ -141,6 +141,7 @@ SELECT TRIM(BOTH 'Z' FROM 'ZZZKHZZZ') FROM DUAL;
     LOWER / UPPER / INITCAP(STRING) => 결과값은 CHARCTER 타입
 */
 
+
 SELECT LOWER('Welcome To The Show') FROM DUAL;
 SELECT UPPER('Welcome To The Show') FROM DUAL;
 SELECT INITCAP('welcome to the show') FROM DUAL; -- 단어의 공백이 있을때마다 시작 단어는 대문자
@@ -160,7 +161,7 @@ SELECT 'ABC' || '초콜릿' || '맛있다.' FROM DUAL;
 --------------------------------------------------------------------------------
 /*
     REPLACE : 출력할 때 바꿔줌
-    REPLACE(STRING, STR,STR)
+    REPLACE(STRING, STR(바꿀거),STR(바꿀내용)
 */
 SELECT EMP_NAME, EMAIL, REPLACE(EMAIL, 'kh.or.kr', 'gmail.com')
 FROM EMPLOYEE;
