@@ -459,3 +459,4 @@ FROM EMPLOYEE;
 
 SELECT COUNT(DISTINCT DEPT_CODE)
 FROM EMPLOYEE; --현재 사원들이 몇개의 부서에 분포되어있는지(중복 제거)
+
