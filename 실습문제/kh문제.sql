@@ -1,8 +1,13 @@
 -- 1. JOB 테이블의 모든 정보 조회
+SELECT * FROM JOB;
 -- 2. JOB 테이블의 직급 이름 조회
+SELECT JOB_NAME FROM JOB;
 -- 3. DEPARTMENT 테이블의 모든 정보 조회
+SELECT * FROM DEPARTMENT;
 -- 4. EMPLOYEE테이블의 직원명, 이메일, 전화번호, 고용일 조회
+SELECT EMP_NAME, EMAIL, PHONE, HIRE_DATE FROM EMPLOYEE;
 -- 5. EMPLOYEE테이블의 고용일, 사원 이름, 월급 조회
+SELECT HIRE_DATE, EMP_NAME, 
 -- 6. EMPLOYEE테이블에서 이름, 연봉, 총수령액(보너스포함), 실수령액(총수령액 - (연봉*세금 3%)) 조회
 -- 7. EMPLOYEE테이블에서 SAL_LEVEL이 S1인 사원의 이름, 월급, 고용일, 연락처 조회
 -- 8. EMPLOYEE테이블에서 실수령액(6번 참고)이 5천만원 이상인 사원의 이름, 월급, 실수령액, 고용일 조회
