@@ -1,4 +1,4 @@
-/*
+0/*
     < 트리거 TRLGGER >
     내가 지정한 테이블에 INSERT, UPDATE, DELETE 등 DML문에 의해 변경 사항이 생길 때
     (테이블에 이벤트가 발생했을 때)
